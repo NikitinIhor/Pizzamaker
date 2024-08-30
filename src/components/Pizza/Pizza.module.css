@@ -81,4 +81,7 @@ span {
   .price {
     padding-top: 20px;
   }
+  .container img {
+    height: 300px;
+  }
 }
