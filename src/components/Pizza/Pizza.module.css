@@ -75,13 +75,10 @@ span {
     width: 30px;
   }
   .info {
-    height: 100px;
+    height: 70px;
   }
 
   .price {
     padding-top: 20px;
-  }
-  .container img {
-    height: 300px;
   }
 }

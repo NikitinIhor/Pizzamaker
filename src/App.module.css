@@ -56,25 +56,15 @@
   span {
     font-size: 20px;
   }
-  .total button {
-    font-size: 16px;
-    padding: 8px;
-  }
 }
 @media screen and (max-width: 500px) {
   .total {
     margin-top: -40px;
   }
   .total button {
-    font-size: 12px;
+    margin-top: 10px;
   }
   .box {
     gap: 4px;
-  }
-  .pizza1 img {
-    transform: translateX(40%);
-  }
-  .pizza2 img {
-    transform: translateX(-40%);
   }
 }
