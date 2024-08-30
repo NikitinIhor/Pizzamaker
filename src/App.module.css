@@ -49,6 +49,26 @@
 .total button:hover {
   transform: scale(0.95);
 }
+
+@keyframes sendToCart {
+  0% {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5) translateY(-300px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.2) translateX(2000px) translateY(-2500px);
+    opacity: 0;
+  }
+}
+
+.send {
+  animation: sendToCart 1s ease-in-out forwards;
+}
+
 @media screen and (max-width: 740px) {
   .total {
     font-size: 24px;
@@ -59,7 +79,7 @@
 }
 @media screen and (max-width: 500px) {
   .total {
-    margin-top: -40px;
+    margin-top: -10px;
   }
   .total button {
     margin-top: 10px;

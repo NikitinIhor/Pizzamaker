@@ -9,12 +9,18 @@ export default function App() {
   const [price2, setPrice2] = useState(0);
   const [pizzasArr, setPizzasArr] = useState([]);
 
+  const [sended, setSended] = useState(false);
+
   const totalPrice = (price1 + price2).toFixed(2);
 
   const handleClick = () => {
+    setSended(true);
     setPizzasArr((prev) => {
       return [...prev, totalPrice];
     });
+    setTimeout(() => {
+      setSended(false);
+    }, 1000);
   };
   const handleClean = () => {
     setPizzasArr([]);
@@ -36,7 +42,12 @@ export default function App() {
           <p>
             Total price is: <span>{totalPrice}$</span>
           </p>
-          <button onClick={handleClick} type="submit">
+
+          <button
+            className={sended ? css.send : ""}
+            onClick={handleClick}
+            type="submit"
+          >
             Send to catr
           </button>
         </div>
