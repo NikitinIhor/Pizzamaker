@@ -1,0 +1,52 @@
+.container {
+  width: 400px;
+  background-color: rgb(214, 176, 176);
+  color: rgb(48, 41, 41);
+  border-radius: 8px;
+}
+.title {
+  text-align: center;
+  padding-top: 20px;
+}
+.orderList {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+.clear,
+.buy {
+  background-color: rgb(227, 50, 50);
+  padding: 10px;
+  color: white;
+  border-radius: 6px;
+  transition: all 0.4s ease;
+  box-shadow: 2px 2px 5px black;
+}
+.clear:hover,
+.buy:hover {
+  transform: scale(0.95);
+}
+.buy {
+  background-color: rgb(21, 161, 21);
+}
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.orderList {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.orderList span {
+  font-size: 24px;
+  margin-left: 20px;
+}
+.item {
+  margin-bottom: -5px;
+}

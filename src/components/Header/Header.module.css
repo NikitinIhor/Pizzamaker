@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0 40px;
+  background-color: #f15858;
+}
+
+.title {
+  font-size: 30px;
+  color: white;
+  letter-spacing: 0.05em;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  background-color: red;
+}
