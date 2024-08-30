@@ -17,12 +17,6 @@ import pizza15 from "./images/15.png"
 import pizza16 from "./images/16.png"
 import pizza17 from "./images/17.png"
 
-
-
-
-
-
-
 export const PIZZAS = [
     {
         id: 1,
