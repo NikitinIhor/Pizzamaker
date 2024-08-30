@@ -21,25 +21,27 @@ export default function App() {
   };
 
   return (
-    <div className={css.container}>
+    <>
       <Header pizzas={pizzasArr} handleClean={handleClean} />
-      <div className={css.box}>
-        <div className={css.pizza1}>
-          <Pizza setPrice={setPrice1} />
+      <div className={css.container}>
+        <div className={css.box}>
+          <div className={css.pizza1}>
+            <Pizza setPrice={setPrice1} />
+          </div>
+          <div className={css.pizza2}>
+            <Pizza setPrice={setPrice2} />
+          </div>
         </div>
-        <div className={css.pizza2}>
-          <Pizza setPrice={setPrice2} />
+        <div className={css.total}>
+          <p>
+            Total price is: <span>{totalPrice}$</span>
+          </p>
+          <button onClick={handleClick} type="submit">
+            Send to catr
+          </button>
         </div>
+        <MyModal pizzas={pizzasArr} handleClean={handleClean} />
       </div>
-      <div className={css.total}>
-        <p>
-          Total price is: <span>{totalPrice}$</span>
-        </p>
-        <button onClick={handleClick} type="submit">
-          Send to catr
-        </button>
-      </div>
-      <MyModal pizzas={pizzasArr} handleClean={handleClean} />
-    </div>
+    </>
   );
 }

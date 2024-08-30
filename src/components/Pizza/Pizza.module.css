@@ -73,16 +73,4 @@ span {
     transform: translateY(-60px);
     width: 30px;
   }
-  .info {
-    font-size: 10px;
-  }
-  .info h1 {
-    font-size: 14px;
-  }
-  .price {
-    font-size: 14px;
-  }
-  span {
-    font-size: 18px;
-  }
 }

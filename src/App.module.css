@@ -74,4 +74,7 @@
   .box {
     gap: 2px;
   }
+  .box img {
+    margin-top: 100px;
+  }
 }
