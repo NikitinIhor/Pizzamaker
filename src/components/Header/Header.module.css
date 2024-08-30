@@ -25,16 +25,3 @@
 .btn:hover {
   background-color: red;
 }
-
-@media screen and (max-width: 740px) {
-  .container {
-    height: 40px;
-  }
-  .title {
-    font-size: 20px;
-  }
-  .btn {
-    width: 30px;
-    height: 30px;
-  }
-}

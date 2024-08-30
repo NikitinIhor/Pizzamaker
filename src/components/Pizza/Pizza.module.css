@@ -73,4 +73,13 @@ span {
     transform: translateY(-60px);
     width: 30px;
   }
+  .info {
+    height: 100px;
+  }
+  .price {
+    margin-top: 20px;
+  }
+  .container img {
+    height: 300px;
+  }
 }

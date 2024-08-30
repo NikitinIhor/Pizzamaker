@@ -32,7 +32,7 @@
   text-align: center;
   font-size: 32px;
   margin-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .total button {
   margin: 0 auto;
@@ -62,19 +62,10 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .total {
-    font-size: 18px;
-  }
-  span {
-    font-size: 16px;
-  }
   .total button {
     font-size: 12px;
   }
   .box {
     gap: 2px;
-  }
-  .box img {
-    margin-top: 100px;
   }
 }
