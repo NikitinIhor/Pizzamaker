@@ -22,6 +22,7 @@ export default function MyModal({
   closeModal,
   pizzas = [],
   handleClean,
+  handleBuying,
 }) {
   const [loader, setLoader] = useState(false);
 
@@ -32,6 +33,7 @@ export default function MyModal({
       setLoader(false);
       closeModal();
       handleClean();
+      handleBuying();
     }, 4000);
   };
 

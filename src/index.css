@@ -1,6 +1,9 @@
 body {
   font-family: sans-serif;
   line-height: 1.5;
+  background: url("./images/wall.jpg");
+  background-size: cover;
+  background-position: -30px 100px;
 }
 
 h1,

@@ -6,12 +6,12 @@
   padding: 10px;
   height: 40px;
   text-align: center;
-  color: rgb(248, 70, 70);
-  font-size: 14px;
+  color: rgb(228, 228, 228);
+  font-size: 20px;
 }
 .info h1 {
-  color: red;
-  font-size: 24px;
+  color: rgb(157, 157, 157);
+  font-size: 32px;
   letter-spacing: 0.05em;
 }
 
@@ -26,6 +26,8 @@ button {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  background-color: red;
+  border-radius: 50%;
 }
 .prev {
   transform: translateY(150px);
@@ -37,17 +39,15 @@ button {
 .price {
   text-align: center;
   margin-top: -50px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
-  color: rgb(76, 76, 76);
+  color: rgb(228, 228, 228);
 }
 span {
   font-size: 30px;
-  color: rgb(250, 72, 72);
+  color: rgb(255, 255, 255);
 }
-.price {
-  color: rgb(76, 76, 76);
-}
+
 @media screen and (max-width: 740px) {
   .prev {
     transform: translateY(80px);
@@ -58,10 +58,10 @@ span {
     width: 40px;
   }
   .info {
-    font-size: 12px;
+    font-size: 18px;
   }
   .info h1 {
-    font-size: 16px;
+    font-size: 28px;
     letter-spacing: 0.01em;
   }
 }
@@ -69,13 +69,19 @@ span {
   .prev {
     transform: translateY(60px);
     width: 30px;
+    background-color: transparent;
   }
   .next {
     transform: translateY(-60px);
     width: 30px;
+    background-color: transparent;
   }
   .info {
     height: 70px;
+    font-size: 12px;
+  }
+  .info h1 {
+    font-size: 20px;
   }
 
   .price {

@@ -9,17 +9,25 @@ export default function App() {
   const [price2, setPrice2] = useState(0);
   const [pizzasArr, setPizzasArr] = useState([]);
 
-  const [sended, setSended] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [buying, setBuying] = useState(false);
 
   const totalPrice = (price1 + price2).toFixed(2);
 
+  const handleBuying = () => {
+    setBuying(true);
+    setTimeout(() => {
+      setBuying(false);
+    }, 2000);
+  };
+
   const handleClick = () => {
-    setSended(true);
+    setSending(true);
     setPizzasArr((prev) => {
       return [...prev, totalPrice];
     });
     setTimeout(() => {
-      setSended(false);
+      setSending(false);
     }, 1000);
   };
   const handleClean = () => {
@@ -28,7 +36,12 @@ export default function App() {
 
   return (
     <>
-      <Header pizzas={pizzasArr} handleClean={handleClean} />
+      <Header
+        buying={buying}
+        handleBuying={handleBuying}
+        pizzas={pizzasArr}
+        handleClean={handleClean}
+      />
       <div className={css.container}>
         <div className={css.box}>
           <div className={css.pizza1}>
@@ -40,11 +53,11 @@ export default function App() {
         </div>
         <div className={css.total}>
           <p>
-            Total price is: <span>{totalPrice}$</span>
+            ~ Total price is: <span>{totalPrice}$ ~</span>
           </p>
 
           <button
-            className={sended ? css.send : ""}
+            className={sending ? css.send : ""}
             onClick={handleClick}
             type="submit"
           >

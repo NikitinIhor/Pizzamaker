@@ -50,6 +50,10 @@
 .item {
   margin-bottom: -5px;
 }
+.item span {
+  color: black;
+  font-weight: 600;
+}
 @media screen and (max-width: 500px) {
   .container {
     width: 300px;

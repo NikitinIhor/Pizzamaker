@@ -33,22 +33,23 @@ export default function Pizza({ setPrice }) {
             <p>{PIZZAS[currentIndex].ingredients}</p>
           </div>
           <button onClick={handlePrev} className={css.prev} type="button">
-            <IconContext.Provider value={{ size: 40 }}>
+            <IconContext.Provider value={{ size: 40, color: "white" }}>
               <TiArrowUpOutline />
             </IconContext.Provider>
           </button>
           <img
+            className="css.image"
             src={PIZZAS[currentIndex].image}
             alt={PIZZAS[currentIndex].alt}
           />
           <button onClick={handleNext} className={css.next} type="button">
-            <IconContext.Provider value={{ size: 40 }}>
+            <IconContext.Provider value={{ size: 40, color: "white" }}>
               <TiArrowDownOutline />
             </IconContext.Provider>
           </button>
         </div>
         <p className={css.price}>
-          Price is: <span>{PIZZAS[currentIndex].price}$</span>
+          ~ Price is: <span>{PIZZAS[currentIndex].price}$</span>
         </p>
       </div>
     </>
