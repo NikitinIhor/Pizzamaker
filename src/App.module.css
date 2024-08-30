@@ -1,5 +1,6 @@
 .container {
   margin: 0 auto;
+  height: 100vh;
 }
 .box {
   display: flex;

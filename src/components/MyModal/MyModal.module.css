@@ -50,3 +50,8 @@
 .item {
   margin-bottom: -5px;
 }
+@media screen and (max-width: 500px) {
+  .container {
+    width: 300px;
+  }
+}
