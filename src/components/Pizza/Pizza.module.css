@@ -61,7 +61,8 @@ span {
     font-size: 12px;
   }
   .info h1 {
-    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 0.01em;
   }
 }
 @media screen and (max-width: 500px) {
@@ -76,8 +77,9 @@ span {
   .info {
     height: 100px;
   }
+
   .price {
-    margin-top: 20px;
+    padding-top: 20px;
   }
   .container img {
     height: 300px;
