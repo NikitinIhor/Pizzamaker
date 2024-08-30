@@ -33,6 +33,7 @@ button {
 .next {
   transform: translateY(-150px);
 }
+
 .price {
   text-align: center;
   margin-top: -50px;
@@ -46,4 +47,42 @@ span {
 }
 .price {
   color: rgb(76, 76, 76);
+}
+@media screen and (max-width: 740px) {
+  .prev {
+    transform: translateY(80px);
+    width: 40px;
+  }
+  .next {
+    transform: translateY(-80px);
+    width: 40px;
+  }
+  .info {
+    font-size: 12px;
+  }
+  .info h1 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .prev {
+    transform: translateY(60px);
+    width: 30px;
+  }
+  .next {
+    transform: translateY(-60px);
+    width: 30px;
+  }
+  .info {
+    font-size: 10px;
+  }
+  .info h1 {
+    font-size: 14px;
+  }
+  .price {
+    font-size: 14px;
+  }
+  span {
+    font-size: 18px;
+  }
 }

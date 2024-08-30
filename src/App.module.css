@@ -1,6 +1,4 @@
 .container {
-  /* width: 1000px; */
-  /* height: 100%; */
   margin: 0 auto;
 }
 .box {
@@ -29,7 +27,7 @@
   justify-content: center;
   text-align: center;
   font-size: 32px;
-  margin-top: -20px;
+  margin-top: 20px;
   padding-bottom: 50px;
 }
 .total button {
@@ -46,4 +44,30 @@
 }
 .total button:hover {
   transform: scale(0.95);
+}
+@media screen and (max-width: 740px) {
+  .total {
+    font-size: 24px;
+  }
+  span {
+    font-size: 20px;
+  }
+  .total button {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .total {
+    font-size: 18px;
+  }
+  span {
+    font-size: 16px;
+  }
+  .total button {
+    font-size: 12px;
+  }
+  .box {
+    gap: 2px;
+  }
 }
