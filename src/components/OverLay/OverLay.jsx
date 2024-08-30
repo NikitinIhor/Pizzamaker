@@ -1,4 +1,4 @@
-import css from "./Overlay.module.css";
+import css from "./OverLay.module.css";
 
 export default function OverLay() {
   return <div className={css.overlay}></div>;
